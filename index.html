@@ -621,7 +621,7 @@
 						<label class="label" >Game Time:</label> 
 					</div>
 					<div class="grid-item2">
-						<select id="timer"  style="font-weight: 100;font-size: 14px;"> 
+						<select id="timer"  style="font-weight: 100%;font-size:60%;"> 
 							<option> 2 min</option>
 							<option> 1 min</option>
 							<option> 5 min</option>
@@ -637,7 +637,7 @@
 						<label class="label" style="text-align:center ;">Solved:</label> 					
 					</div>
 					<div class="grid-item2">
-						<label id="solved" class="label2" style="font-size: 14px;">0</label> 
+						<label id="solved" class="label2" style="font-size: 60%;">0</label> 
 					</div>
 					<div class="grid-item2">
 						<label class="label">Timer------</label> 
@@ -655,7 +655,7 @@
 						<label class="label" style="text-align:center ;">Score:</label> 
 					</div>
 					<div class="grid-item2">
-						<label id="score" class="label2" style="font-size: 14px;"">0</label> 	
+						<label id="score" class="label2" style="font-size: 60%;"">0</label> 	
 					</div>
 
 				</div>
@@ -668,7 +668,7 @@
 						<button type = "button" onclick=EnterNum2() id = "b2" class = "small_btn"></button>
 					</div>
 					<div class="grid-item">
-						<button type = "button"  onclick=Skip() id = "Skip" class = "small_btn" style="font-size:18px;font-weight: bold;" >Skip</button>
+						<button type = "button"  onclick=Skip() id = "Skip" class = "small_btn" style="font-size:60%;font-weight: bold;" >Skip</button>
 					</div>  
 					<div class="grid-item">
 						<button type = "button" onclick=EnterNum3() id = "b3" class = "small_btn"></button>
@@ -677,7 +677,7 @@
 						<button type = "button" onclick=EnterNum4()  id = "b4" class = "small_btn"></button>
 					</div>
 					<div class="grid-item">
-						<button type = "button" onclick=Retry() id = "retry" class = "small_btn" style="font-size:18px;font-weight: bold;">Retry</button>
+						<button type = "button" onclick=Retry() id = "retry" class = "small_btn" style="font-size:60%;font-weight: bold;">Retry</button>
 					</div>
 					<div class="grid-item">
 						<button type = "button" onclick=EnterPlus() id = "plus" class = "smallest_btn">&#43</button>
@@ -763,10 +763,10 @@
 
 .grid-container {
   display: grid;
-  height: 200px;
-  width: 200px;
-  grid-template-rows: 60px 60px 60px;
-  grid-template-columns: 60px 60px 60px 60px 60px 60px;
+  height: 300px;
+  width: 100%;
+  grid-template-rows: 30% 30% 30%;
+  grid-template-columns: 15% 15% 15% 15% 15% 15%;
   grid-template-areas:
     'main1 main1 right1 right1 menu menu'
     'main2 main2 right2 right2 menu3 menu3'
@@ -829,7 +829,7 @@
 }
 
 .small_btn {
-    width: 125px;
+    width: 100%;
     height: 100%;
 	font-size: 24px;
 	font-family: 'Times New Roman', Times, serif;
@@ -839,7 +839,7 @@
     width: 90%;
     height: 100%;
 	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	font-size: 24px;
+	font-size: 80%;
 	font-weight:600;
 	background-color: rgb(70, 27, 150);
 	color: white;
@@ -855,8 +855,8 @@
 
 .grid-container2 {
   display: grid;
-  height: 65px;
-  width: 360px;
+  height: 150px;
+  width: 60%x;
   grid-template-rows: 50%px 50%;
   grid-template-columns: 22% 8% 1% 8% 44% 13% 15%;
   grid-template-areas:
@@ -927,7 +927,7 @@
 	display: inline-block;
     width: 100%;
     height: 100%;
-	font-size:11px;
+	font-size:50%;
 	text-align: left;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	font-weight: bold;
@@ -938,7 +938,7 @@
 	display: inline-block;
     width: 100%;
     height: 100%;
-	font-size:16px;
+	font-size:100%;
 	text-align: left;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -946,8 +946,8 @@
 
 #levelSelection {
    
-    width: 150px;
-    height: 20px;
+    width: 60%;
+    height: 40px;
     margin-left: 0px;
 	margin-bottom: 5px;
 }
@@ -961,10 +961,10 @@
 
 #formula {
     display: grid;
-	height: 60px;
-    width: 385px;
+	height: 100px;
+    width: 60%;
 	background-color: rgba(129, 152, 212, 0.8);
-	font-size: 40px;
+	font-size: 60%;
 	text-align: center;
 	font-family: 'Times New Roman', Times, serif;
 }
@@ -973,14 +973,13 @@
 .button {
   border: none;
   color: rgb(17, 1, 1);
-  padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 60%;
+  margin: 4% 2%;
   cursor: pointer;
 }
 
@@ -1077,93 +1076,7 @@ input[type="submit"] {
 	border: solid 1px #0d0d0e;
 	padding: 2px 12px;
 }
-
-#challenge-twenty-four .highlight-0 {
-	background-color: #CCDEFF;
-}
-#challenge-twenty-four .highlight-1 {
-	background-color: #FFF5B3;
-}
-#challenge-twenty-four .highlight-2 {
-	background-color: #FFB2B8;
-}
-#challenge-twenty-four .highlight-3 {
-	background-color: #D4FFB3;
-}
-#challenge-twenty-four .highlight-4 {
-	background-color: #D4BFFF;
-}
-#challenge-twenty-four .highlight-5 {
-	background-color: #FFD5B5;
-}
-#challenge-twenty-four .highlight-6 {
-	background-color: #FFBFFE;
-}
-#challenge-twenty-four .highlight-7 {
-	background-color: #BBBBBB;
-}
-#challenge-twenty-four .highlight-8 {
-	background-color: #E9E9E9;
-}
-#challenge-twenty-four .highlight-9 {
-	background-color: #BFFFFE;
-}
-#challenge-twenty-four .highlight-10 {
-	background-color: #FF9300;
-}
-#challenge-twenty-four .highlight-11 {
-	background-color: #8EFA00;
-}
-#challenge-twenty-four .highlight-12 {
-	background-color: #0096FF;
-	color: #FFFFFF;
-}
-#challenge-twenty-four .highlight-13 {
-	background-color: #FF40FF;
-}
-#challenge-twenty-four .highlight-14 {
-	background-color: #5E5E5E;
-	color: #FFFFFF;
-}
-#challenge-twenty-four .highlight-15 {
-	background-color: #945200;
-	color: #FFFFFF;
-}
-#challenge-twenty-four .highlight-16 {
-	background-color: #4F8F00;
-	color: #FFFFFF;
-}
-#challenge-twenty-four .highlight-17 {
-	background-color: #005493;
-	color: #FFFFFF;
-}
-#challenge-twenty-four .highlight-18 {
-	background-color: #941751;
-	color: #FFFFFF;
-}
-#challenge-twenty-four .highlight-19 {
-	background-color: #929000;
-	color: #FFFFFF;
-}
-#challenge-twenty-four .highlight-20 {
-	background-color: #009193;
-	color: #FFFFFF;
-}
-#challenge-twenty-four .highlight-21 {
-	background-color: #011993;
-	color: #FFFFFF;
-}
-#challenge-twenty-four .highlight-22 {
-	background-color: #942193;
-	color: #FFFFFF;
-}
-#challenge-twenty-four .highlight-23 {
-	background-color: #F0F0F0;
-}
-#challenge-twenty-four .highlight-24 {
-	background-color: #F0F0F0;
-}
-
+#
 
 .col-md-12 {
   position: relative;
