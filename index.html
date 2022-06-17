@@ -621,7 +621,7 @@
 						<label class="label" >Game Time:</label> 
 					</div>
 					<div class="grid-item2">
-						<select id="timer"  style="font-weight: 100%;font-size:80%;"> 
+						<select id="timer"  style="font-weight: 100%;font-size:100%;"> 
 							<option> 2 min</option>
 							<option> 1 min</option>
 							<option> 5 min</option>
@@ -668,7 +668,7 @@
 						<button type = "button" onclick=EnterNum2() id = "b2" class = "small_btn"></button>
 					</div>
 					<div class="grid-item">
-						<button type = "button"  onclick=Skip() id = "Skip" class = "small_btn" style="font-size:100%;font-weight: bold;" >Skip</button>
+						<button type = "button"  onclick=Skip() id = "Skip" class = "small_btn" style="font-size:150%;font-weight: bold;" >Skip</button>
 					</div>  
 					<div class="grid-item">
 						<button type = "button" onclick=EnterNum3() id = "b3" class = "small_btn"></button>
@@ -677,7 +677,7 @@
 						<button type = "button" onclick=EnterNum4()  id = "b4" class = "small_btn"></button>
 					</div>
 					<div class="grid-item">
-						<button type = "button" onclick=Retry() id = "retry" class = "small_btn" style="font-size:100%;font-weight: bold;">Retry</button>
+						<button type = "button" onclick=Retry() id = "retry" class = "small_btn" style="font-size:150%;font-weight: bold;">Retry</button>
 					</div>
 					<div class="grid-item">
 						<button type = "button" onclick=EnterPlus() id = "plus" class = "smallest_btn">&#43</button>
@@ -692,7 +692,7 @@
 						<button type = "button" onclick=EnterDivide() id = "divide" class = "smallest_btn">&#247</button>
 					</div>
 					<div class="grid-item">
-						<button type = "button" onclick=Resume() id = "Resume" class = "small_btn" style="font-size:40px;font-weight: bold;">&#8617</button>
+						<button type = "button" onclick=Resume() id = "Resume" class = "small_btn" style="font-size:60px;font-weight: bold;">&#8617</button>
 					</div>
 					
 				</div>
@@ -764,8 +764,8 @@
 .grid-container {
   display: grid;
   height: 420px;
-  width: 100%;
-  grid-template-rows: 30% 30% 30%;
+  width: 90%;
+  grid-template-rows: 27% 27% 27%;
   grid-template-columns: 15% 15% 15% 15% 15% 15%;
   grid-template-areas:
     'main1 main1 right1 right1 menu menu'
@@ -924,10 +924,11 @@
 
 
 .label {
+	margin-top:  5px;
 	display: inline-block;
-    width: 100%;
-    height: 100%;
-	font-size:100%;
+    	width: 100%;
+   	height: 100%;
+   	font-size:100%;
 	text-align: left;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	font-weight: bold;
@@ -964,10 +965,10 @@
 
 #formula {
     display: grid;
-    height: 100px;
+    height: 120px;
     width: 60%;
     background-color: rgba(129, 152, 212, 0.8);
-    font-size: 400%;
+    font-size: 500%;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
 }
