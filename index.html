@@ -17,7 +17,7 @@
 	function Timer() {
 		
 		const minStr = document.getElementById("timer").value
-	    const min = minStr.substr(0,minStr.length-4)
+		const min = minStr.substr(0,minStr.length-4)
 		document.getElementById("timerMinutes").innerHTML=min.toString().padStart(3,'0').substr(1);
 		document.getElementById("timerSeconds").innerHTML="00"
 
@@ -603,7 +603,7 @@
 		</h1>	
 
 		<div >
-			<select id="levelSelection" >
+			<select id="levelSelection" style="font-size:60% ;">
 				<option value="Numbers 1-9">Numbers 1-9</option>
 				<option value="Numbers 1-3">Numbers 1-13</option>	
 			</select>
