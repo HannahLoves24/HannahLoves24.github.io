@@ -230,6 +230,7 @@
 		let expression=document.getElementById("formula").innerHTML.trim()
 		if (checkEquation()=="NumberAndSign"){
 			expression=expression.substr(0,expression.length-1)
+			document.getElementById("formula").innerHTML =  expression + "&#43;"
 		}
 		if (checkEquation()=="NumberOnly"){
 			document.getElementById("formula").innerHTML =  expression + "&#43;"
@@ -242,6 +243,7 @@
 		let expression=document.getElementById("formula").innerHTML.trim()
 		if (checkEquation()=="NumberAndSign"){
 			expression=expression.substr(0,expression.length-1)
+			document.getElementById("formula").innerHTML =  expression + "&#45;"
 		}
 		if (checkEquation()=="NumberOnly"){
 			document.getElementById("formula").innerHTML = expression +  "&#45;"
@@ -254,6 +256,7 @@
 		let expression=document.getElementById("formula").innerHTML.trim()
 		if (checkEquation()=="NumberAndSign"){
 			expression=expression.substr(0,expression.length-1)
+			document.getElementById("formula").innerHTML =  expression + "&#215;"
 		}
 		if (checkEquation()=="NumberOnly"){
 			document.getElementById("formula").innerHTML = expression + "&#215;"
@@ -266,6 +269,7 @@
 		let expression=document.getElementById("formula").innerHTML.trim()
 		if (checkEquation()=="NumberAndSign"){
 			expression=expression.substr(0,expression.length-1)
+			document.getElementById("formula").innerHTML =  expression + "&#247;"
 		}
 		if (checkEquation()=="NumberOnly"){
 			document.getElementById("formula").innerHTML =expression + "&#247;"
@@ -618,7 +622,7 @@
 		</div>
 		
 
-				
+		<br>
 		
 		<div class="container">
 		   
@@ -629,7 +633,7 @@
 						<label class="label" >Game Time:</label> 
 					</div>
 					<div class="grid-item2">
-						<select id="timer"  style="font-weight: 100%;font-size:100%;"> 
+						<select id="timer"  style="font-family:Verdana, Geneva, Tahoma, sans-serif;font-weight: 100%;font-size:150%;"> 
 							<option> 2 min</option>
 							<option> 1 min</option>
 							<option> 5 min</option>
@@ -729,12 +733,11 @@
 					<div class="col-md-12">
 						<form onsubmit="return false" name="input_form" >
 
-							<input type="number"  max=13 min=1 pattern="/d"  size="3" id="number1" value>
+							<input type="number"  max=13 min=1 pattern="/d"  size="" id="number1" value>
 							<input type="number"  max=13 min=1 pattern="/d"  size="3" id="number2" value>
 							<input type="number"  max=13 min=1 pattern="/d"  size="3" id="number3" value>
 							<input type="number"  max=13 min=1 pattern="/d"  size="3" id="number4" value>
 							
-							<br>
 							<br>
 							<button type="submit" class="button button2" style="font-size: 150%;" onclick=showInput() >Solve</button>		
 							<button type="submit" class="button button2" style="font-size: 150%;" onclick=HideSolution() >Hide</button>			
@@ -830,7 +833,6 @@
 
 
 .grid-container > div {
-  background-color: rgba(141, 137, 137, 0.8);
   text-align: center;
   padding: 0px 0;
   font-size: 30px;
@@ -934,7 +936,7 @@
 .label {
 	margin-top:  5px;
 	display: inline-block;
-    	width: 100%;
+    width: 100%;
    	height: 100%;
    	font-size:100%;
 	text-align: left;
@@ -964,8 +966,9 @@
 }
 
  #timer {
-    width: 100%;
+    width: 80%;
     height: 60%;
+	
 }
 
 #container {
@@ -994,9 +997,9 @@
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 100%;
-  margin: 4% 2%;
+  margin: 1% 1%;
   cursor: pointer;
-  width:10%;
+  width:8%;
   height:60px;			 
 }
 
@@ -1053,7 +1056,7 @@ input[type="submit"] {
 }
 
 #challenge-twenty-four .clear {
-	font-size: 26px;
+	font-size: 32px;
 	padding: 5px;
 }
 
@@ -1067,7 +1070,7 @@ input[type="submit"] {
 #challenge-twenty-four p,
 #challenge-twenty-four ul,
 #challenge-twenty-four li {
-	font-size: 16px;
+	font-size: 32px;
 }
 
 #challenge-twenty-four ul,
@@ -1079,7 +1082,7 @@ input[type="submit"] {
 
 #challenge-twenty-four input {
 	text-align: center;
-	font-size: 36px
+	font-size: 48px
 }
 
 #challenge-twenty-four input[type="submit"] {
@@ -1088,12 +1091,7 @@ input[type="submit"] {
 	padding: 2px 12px;
 }
 
-#challenge-twenty-four input[type="button"] {
-	background-color: #f3f0e8;
-	border: solid 1px #0d0d0e;
-	padding: 2px 12px;
-}
-#
+
 
 .col-md-12 {
   position: relative;
@@ -1101,4 +1099,6 @@ input[type="submit"] {
   padding-right: 15px;
   padding-left: 15px;
 }
+
+
 </style>
