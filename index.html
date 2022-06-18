@@ -58,6 +58,7 @@
 		//num= num.sort(function(a, b){return b-a})
 		//if (n1 == ""|n2 == ""|n3 == ""|n4 == ""){document.getElementById("Solution").innerHTML= "Please enter numbers!"}
 		if (num.includes("")){document.getElementById("Solution").innerHTML= "Please enter numbers!"}
+		else if (num.some(element => element>13) ||num.some(element => element<1)){"Numbers must be between 1-13!"}
 		else 
 		document.getElementById("Solution").innerHTML= calc(num)
 	//document.form.input_form.n1.innerHTML= 8
